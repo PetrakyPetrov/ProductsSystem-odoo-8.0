@@ -20,7 +20,7 @@
                     <group>
                         <field name="name" />
                         <field name="description" />
-                        <field name="quantity" />lewewewe
+                        <field name="quantity" />
                     </group>
                 </form>
             </field>
