@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <act_window id="products_system_action"
+            name="Products System"
+            res_model="products.system" />
+
+        <menuitem
+            id="products_system_menu"
+            name="Products"
+            action="products_system_action"
+            parent=""
+            sequence="5"/>
+
+        <record id="products_system_view_form" model="ir.ui.view">
+            <field name="name">Products System Form</field>
+            <field name="model">products.system</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name" />
+                        <field name="description" />
+                        <field name="quantity" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="products_system_view_tree" model="ir.ui.view">
+            <field name="name">Products System Form</field>
+            <field name="model">products.system</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="description" />
+                    <field name="quantity" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="products_system_view_search" model="ir.ui.view">
+            <field name="name">Products System Form</field>
+            <field name="model">products.system</field>
+            <field name="arch" type="xml">
+                <search>
+                        <field name="name" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</openerp>
