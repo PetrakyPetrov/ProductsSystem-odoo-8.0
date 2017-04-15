@@ -4,7 +4,7 @@ import json
 
 class Main(http.Controller):
 
-    @http.route('/products_system/products/json', type='http', auth='none')
+    @http.route('/products_system/all_products', type='http', auth='none', website=True)
     def products_json(self):
 
         records = request.env['products.system']\
