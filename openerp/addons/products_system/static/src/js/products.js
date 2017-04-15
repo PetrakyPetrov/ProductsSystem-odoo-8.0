@@ -4,6 +4,6 @@
 
 odoo.define('Products', function(require) {
     var core = require('web.core');
-    alert(core._t('Hello world'));
+    //alert(core._t('Hello world'));
 });
 
